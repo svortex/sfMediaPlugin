@@ -8,6 +8,12 @@ homepage:
 upload:
   url:   /upload
   param: { module: test, action: upload }
+add:
+  url:   /add
+  param: { module: test, action: add }
+create:
+  url:   /add
+  param: { module: test, action: create }
 # generic rules
 # please, remove them by adding more specific rules
 default_index:
