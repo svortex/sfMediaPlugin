@@ -1,0 +1,33 @@
+sfMediaFile:
+  columns:
+    type: {type: string(255)}
+
+
+sfMediaVideo:
+  inheritance:
+    extends: sfMediaFile
+    type: column_aggregation
+    keyField: type
+    keyValue: video
+  columns:
+    code: {type: string(255)}
+    title: {type: string(255)}
+    url: {type: string(255)}
+    thumb: {type: string(255)}
+    description: {type: string(255)}
+    provider: {type: string(255)}
+
+
+sfMediaImage:
+  inheritance:
+    extends: sfMediaFile
+    type: column_aggregation
+    keyField: type
+    keyValue: image
+  columns:
+    real_name: {type: string(255)}
+    small: {type: string(255)}
+    medium: {type: string(255)}
+    large: {type: string(255)}
+
+
